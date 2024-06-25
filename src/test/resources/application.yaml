@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:demodb
+    username: demo
+    password: demo
+    driverClassName: org.h2.Driver
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: none

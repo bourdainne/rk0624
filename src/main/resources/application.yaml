@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+spring:
+  datasource:
+    url: jdbc:h2:mem:demodb
+    username: demo
+    password: demo
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop
+springdoc:
+  swagger-ui:
+    -url:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs
