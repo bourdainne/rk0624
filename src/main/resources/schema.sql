@@ -10,8 +10,7 @@ CREATE TABLE IF NOT EXISTS tool_details (
     daily_charge NUMERIC(19,4) NOT NULL,
     weekday_charge BOOLEAN NOT NULL DEFAULT TRUE,
     weekend_charge BOOLEAN NOT NULL,
-    holiday_charge BOOLEAN NOT NULL,
-    currency VARCHAR(3) NOT NULL DEFAULT 'USD'
+    holiday_charge BOOLEAN NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS tool (

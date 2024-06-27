@@ -31,9 +31,6 @@ public class ToolDetailsEntity extends BaseEntity {
     @Column(name = "holiday_charge", nullable = false)
     private Boolean holidayCharge;
 
-    @Column(name = "currency")
-    private String currency;
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
